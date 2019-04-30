@@ -2,8 +2,8 @@ package ingsw.pdd.conjuntos.impl;
 
 public abstract class GeneralFactory {
 	
-	public PersonaFactory persona;
-	public ServicioFactory servicio;
+	private PersonaFactory persona;
+	private ServicioFactory servicio;
 	
 	
 

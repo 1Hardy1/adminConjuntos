@@ -5,8 +5,8 @@ import ingsw.pdd.conjuntos.servicio.Servicio;
 public class Administracion {
 	
 	
-	public Servicio Serv;
-	public int opcionServ;
+	private Servicio Serv;
+	private int opcionServ;
 	PersonaFactory persona = new PersonaFactory();
 	Servicio servicio= new ServicioFactory().crearServicio(Serv);
 	
