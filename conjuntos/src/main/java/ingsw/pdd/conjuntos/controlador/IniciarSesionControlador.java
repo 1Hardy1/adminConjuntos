@@ -40,7 +40,7 @@ public class IniciarSesionControlador {
 	@FXML
 	void clickBtnVolver(ActionEvent event) throws IOException {
 		Stage stage = (Stage) btnVolver.getScene().getWindow();
-		Parent root = FXMLLoader.load(getClass().getResource("/view/Sprincipal.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/view/principal.fxml"));
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
