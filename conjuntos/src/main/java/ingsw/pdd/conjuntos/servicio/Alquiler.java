@@ -6,7 +6,6 @@ import ingsw.pdd.conjuntos.impl.ServicioFactory;
 public interface Alquiler {
 	
 	public int getPrecio();
-	public String getTipo();
 	Servicio admin= new Administracion().getServicio();
 	
 }
