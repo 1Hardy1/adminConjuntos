@@ -1,5 +1,7 @@
 package ingsw.pdd.conjuntos.pago;
 
-public class FacadeRecibo {
+public interface FacadeRecibo {
+	
+	public void generarReporte(int parametro);
 
 }
