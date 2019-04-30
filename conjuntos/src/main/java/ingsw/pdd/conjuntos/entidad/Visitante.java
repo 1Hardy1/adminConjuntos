@@ -5,16 +5,16 @@ public class Visitante{
 	private int documento;
 	private String nombre;
 	private int torre;
-	private int apart;
+	private int casa;
 	private String entrada;
 	private String salida;
 
-	public Visitante(int documento, String nombre, int torre, int apart, String entrada, String salida) {
+	public Visitante(int documento, String nombre, int torre, int casa, String entrada, String salida) {
 		super();
 		this.documento = documento;
 		this.nombre = nombre;
 		this.torre = torre;
-		this.apart = apart;
+		this.casa = casa;
 		this.entrada = entrada;
 		this.salida = salida;
 	}
@@ -27,12 +27,12 @@ public class Visitante{
 		this.torre = torre;
 	}
 
-	public int getApart() {
-		return apart;
+	public int getcasa() {
+		return casa;
 	}
 
-	public void setApart(int apart) {
-		this.apart = apart;
+	public void setcasa(int casa) {
+		this.casa = casa;
 	}
 
 	public int getDocumento() {
@@ -62,7 +62,7 @@ public class Visitante{
 
 	@Override
 	public String toString() {
-		return "Visitante [documento=" + documento + ", nombre=" + nombre + ", torre=" + torre + ", apart=" + apart
+		return "Visitante [documento=" + documento + ", nombre=" + nombre + ", torre=" + torre + ", casa=" + casa
 				+ ", entrada=" + entrada + ", salida=" + salida + "]";
 	}
 
