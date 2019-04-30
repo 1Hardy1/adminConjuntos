@@ -11,19 +11,26 @@ import javafx.stage.Stage;
 
 public class App extends Application
 {
+	public static Stage stage;
 	
 	@Override
-	public void start(Stage stage) throws Exception {
+	public void start(Stage primaryStage) throws Exception {
 		Parent root = FXMLLoader.load(getClass().getResource("/view/principal.fxml"));
-		Scene scene = new Scene(root);
-		stage.setScene(scene);
-		stage.show();  
+	        Scene scene = new Scene(root);
+	        stage = primaryStage;
+	        primaryStage.setScene(scene);
+	        primaryStage.show();
 	}
 	
     public static void main( String[] args )
     {
     	launch(args);
     }
+    
+    public static  void cerrarVentana() {
+       	
+        stage.close();
 
+    }
 
 }
