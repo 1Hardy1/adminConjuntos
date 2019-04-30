@@ -1,5 +1,5 @@
 package ingsw.pdd.conjuntos.servicio;
 
-public class Piscina {
+public class Piscina extends Servicio{
 
 }

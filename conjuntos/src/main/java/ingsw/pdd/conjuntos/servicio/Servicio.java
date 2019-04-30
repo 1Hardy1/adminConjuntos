@@ -1,9 +1,13 @@
 package ingsw.pdd.conjuntos.servicio;
 
-public class Servicio {
+import ingsw.pdd.conjuntos.impl.Administracion;
+
+public class Servicio implements Alquiler{
 	
 	private int precio;
 	private String tipo; //publico o privado
+	
+	
 	
 	
 	public int getPrecio() {

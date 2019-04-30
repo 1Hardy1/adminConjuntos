@@ -1,5 +1,12 @@
 package ingsw.pdd.conjuntos.servicio;
 
-public class Alquiler {
+import ingsw.pdd.conjuntos.impl.Administracion;
+import ingsw.pdd.conjuntos.impl.ServicioFactory;
 
+public interface Alquiler {
+	
+	public int getPrecio();
+	public String getTipo();
+	Servicio admin= new Administracion().getServicio();
+	
 }
