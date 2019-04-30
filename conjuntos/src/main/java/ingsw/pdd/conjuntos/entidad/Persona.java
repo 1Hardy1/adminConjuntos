@@ -1,38 +1,47 @@
 package ingsw.pdd.conjuntos.entidad;
 
+import java.util.List;
 
-public abstract class Persona {
+import ingsw.pdd.conjuntos.impl.IBuild;
+
+public abstract class Persona implements IBuild{
 	
 	    private int documento;
 	    private String nombre;
-	    private int telefono;
-	    private String nacimiento;
+	    private String genero;
+	    private int edad;
+		private Direccion 		direccion;
+		private List<Telefono>		telefonos;
+		private List<Contacto>	Contactos;
 	    private Login login;
 
-	    public Persona(int documento, String nombre, int telefono, String nacimiento) {
+	    public Persona(int documento, String nombre, String genero, String edae, Direccion direccion, List<Telefono> telefonos,
+				List<Contacto> Contactos) {
 			super();
 			this.documento = documento;
 			this.nombre = nombre;
-			this.telefono = telefono;
-			this.nacimiento = nacimiento;
+			this.genero = genero;
+			this.edad = edad;
+			this.direccion = direccion;
+			this.telefonos = telefonos;
+			this.Contactos = Contactos;
 			
 		}
 
-		public Persona(int documento, String nombre, int telefono) {
+		public Persona(int documento, String nombre, List<Telefono> telefonos) {
 			super();
 			this.documento = documento;
 			this.nombre = nombre;
-			this.telefono = telefono;
+			this.telefonos = telefonos;
 			
 		}
 
-		public Persona(int documento, String nombre, int telefono, String nacimiento, Login login) {
+		public Persona(int documento, String nombre, int edad, List<Telefono> telefonos, Login login) {
 	        super();
 	        this.documento = documento;
 	        this.nombre = nombre;
-	        this.telefono = telefono;
-	        this.nacimiento = nacimiento;
-	        
+	        this.edad = edad;
+			this.telefonos = telefonos;   
 	        this.login = login;
 	    }
 
@@ -40,7 +49,6 @@ public abstract class Persona {
 			super();
 			this.documento = documento;
 			this.nombre = nombre;
-		
 			this.login = login;
 		}
 
@@ -64,20 +72,20 @@ public abstract class Persona {
 	        this.nombre = nombre;
 	    }
 
-	    public int getTelefono() {
-	        return telefono;
+	    public List<Telefono> gettelefonos() {
+			return telefonos;
+		}
+
+		public void settelefonos(List<Telefono> telefonos) {
+			this.telefonos = telefonos;
+		}
+
+	    public int getEdad() {
+	        return edad;
 	    }
 
-	    public void setTelefono(int telefono) {
-	        this.telefono = telefono;
-	    }
-
-	    public String getNacimiento() {
-	        return nacimiento;
-	    }
-
-	    public void setNacimiento(String nacimiento) {
-	        this.nacimiento = nacimiento;
+	    public void setEdad(int edad) {
+	        this.edad = edad;
 	    }
 
 	    public Login getLogin() {
@@ -88,4 +96,8 @@ public abstract class Persona {
 	        this.login = login;
 	    }
 
+	    public BuildPersona build() {
+	    	
+			return new BuildPersona(documento,nombre, genero, edad, direccion, telefonos, Contactos, login);
+		}
 }

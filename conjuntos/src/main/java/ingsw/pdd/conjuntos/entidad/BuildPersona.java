@@ -7,6 +7,7 @@ import ingsw.pdd.conjuntos.entidad.*;
 
 public class BuildPersona implements IBuild {
 		
+		private int documento;
 		private String 			nombre ;
 		private String 			genero;
 		private int    			edad;
@@ -37,6 +38,20 @@ public class BuildPersona implements IBuild {
 		}
 		
 		
+		public BuildPersona(int documento, String nombre, String genero, int edad, Direccion direccion,
+				List<Telefono> telefonos, List<Contacto> contactos, Login login) {
+			super();
+			this.documento = documento;
+			this.nombre = nombre;
+			this.genero = genero;
+			this.edad = edad;
+			this.direccion = direccion;
+			this.telefonos = telefonos;
+			this.Contactos = Contactos;
+			
+		}
+
+
 		public String getnombre() {
 			return nombre;
 		}

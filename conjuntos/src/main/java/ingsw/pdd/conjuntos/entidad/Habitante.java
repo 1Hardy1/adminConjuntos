@@ -1,11 +1,13 @@
 package ingsw.pdd.conjuntos.entidad;
 
+import java.util.List;
+
 public class Habitante extends Persona{
 	
 
 	private String nombre;
 	private int documento;
-	private int telefono;
+	private List<Telefono>		telefonos;
 
 	
 
@@ -36,15 +38,14 @@ public class Habitante extends Persona{
 	public void setDocumento(int documento) {
 		this.documento = documento;
 	}
-
 	@Override
-	public int getTelefono() {
-		return telefono;
+	 public List<Telefono> gettelefonos() {
+		return telefonos;
 	}
-
+		
 	@Override
-	public void setTelefono(int telefono) {
-		this.telefono = telefono;
+	public void settelefonos(List<Telefono> telefonos) {
+		this.telefonos = telefonos;
 	}
 	
 	
