@@ -5,7 +5,7 @@ import java.util.List;
 import ingsw.pdd.conjuntos.impl.*;
 import ingsw.pdd.conjuntos.entidad.*;
 
-public class BuildPersona {
+public class BuildPersona implements IBuild {
 		
 		private String 			nombre ;
 		private String 			genero;
@@ -155,19 +155,31 @@ public class BuildPersona {
 
 						 return this;  }
 
-				
-
 
 				@Override
 				public BuildPersona build() {
-			
+					
 					return new BuildPersona(nombre, genero, edad, direccion, telefonos, Contactos);
 				}
+
+				
+
+
+				
 				 
 				 
 				
 				 }
-			
-			
+
+		@Override
+		public BuildPersona build() {
+	
+			return new BuildPersona(nombre, genero, edad, direccion, telefonos, Contactos);
+		}
+
+
+	
+
+	
 		
 	}
