@@ -16,8 +16,8 @@ public class Propietario extends Habitante{
 
 
 
-	public Propietario(int documento, String nombre, int telefono, String nacimiento, Login login,int torre, Casa casa) {
-		super(documento, nombre, telefono, nacimiento, login);
+	public Propietario(int documento, String nombre, int telefono, int edad, Login login,int torre, Casa casa) {
+		super(documento, nombre, telefono, edad, login);
 		this.torre = torre;
 		this.casa = casa;
 	}

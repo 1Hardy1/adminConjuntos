@@ -15,7 +15,7 @@ public class Habitante extends Persona{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Habitante(int documento, String nombre, int telefono, String nacimiento, Login login) {
+	public Habitante(int documento, String nombre, int telefono, int edad, Login login) {
 		// TODO Auto-generated constructor stub
 	}
 
