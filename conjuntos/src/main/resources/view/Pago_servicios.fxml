@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="95.0" fitWidth="119.0" layoutX="281.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@97319.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="272.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pago de servicios" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="btnPropietario" layoutX="188.0" layoutY="144.0" onAction="#clickBtnPropietario" prefHeight="25.0" prefWidth="402.0" />
+      <Text layoutX="65.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Propietario:" wrappingWidth="79.1845703125">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de apartamento:" wrappingWidth="90.18457180261612">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="btnApartamento" layoutX="188.0" layoutY="209.0" onAction="#clickBtnApartamento" prefHeight="25.0" prefWidth="402.0" />
+      <Text layoutX="59.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Servicios adicionales usados:" wrappingWidth="90.1845713853836">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="btnServicios" layoutX="188.0" layoutY="278.0" onAction="#clickBtnServicios" prefHeight="25.0" prefWidth="402.0" />
+      <TextField fx:id="btnTotal" layoutX="188.0" layoutY="353.0" onAction="#clickBtnTotal" prefHeight="25.0" prefWidth="402.0" />
+      <Text layoutX="65.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor total a pagar:" wrappingWidth="79.1845703125">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnPago" layoutX="287.0" layoutY="400.0" mnemonicParsing="false" onAction="#clckBtnPago" text="Validar pago" />
+   </children>
+</AnchorPane>

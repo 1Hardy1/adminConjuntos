@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="81.0" fitWidth="90.0" layoutX="282.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
@@ -30,7 +29,7 @@
             <Image url="@97319.png" />
          </image>
       </ImageView>
-      <Button fx:id="BtnAdministracion" layoutX="141.0" layoutY="304.0" mnemonicParsing="false" onAction="#clckBtnAdministracion" prefHeight="25.0" prefWidth="103.0" text="Administracion" />
-      <Button fx:id="BtnServicios" layoutX="420.0" layoutY="304.0" mnemonicParsing="false" onAction="#clckBtnServicios" text="Servicios" />
+      <Button fx:id="btnAdministracion" layoutX="141.0" layoutY="304.0" mnemonicParsing="false" onAction="#clckBtnAdministracion" prefHeight="25.0" prefWidth="103.0" text="Administracion" />
+      <Button fx:id="btnServicios" layoutX="420.0" layoutY="304.0" mnemonicParsing="false" onAction="#clckBtnServicios" text="Servicios" />
    </children>
 </AnchorPane>

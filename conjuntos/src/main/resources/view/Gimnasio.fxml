@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <RadioButton fx:id="btnEntrenador" layoutX="176.0" layoutY="319.0" mnemonicParsing="false" onAction="#clickBtnEntrenador" prefHeight="17.0" prefWidth="94.0" text="Entrenador" />
+      <ImageView fitHeight="84.0" fitWidth="142.0" layoutX="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@34745.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="306.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gimnasio" wrappingWidth="70.1845691204071">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Propietario:" wrappingWidth="79.1845703125">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de apartamento:" wrappingWidth="94.0000077188015">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo solicitado:" wrappingWidth="94.0000077188015">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="116.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Desea adquirir alguno de los servicios adicionales que se ofrecen?" wrappingWidth="451.13671875">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="btnTiendaFit" layoutX="420.0" layoutY="319.0" mnemonicParsing="false" onAction="#clickBtnTiendaFit" prefHeight="17.0" prefWidth="79.0" text="Tienda Fit" />
+      <Button fx:id="btnVolver" layoutX="198.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickBtnVolver" text="Volver" />
+      <Button fx:id="btnApartar" layoutX="420.0" layoutY="355.0" mnemonicParsing="false" onAction="#clickBtnApartar" text="Apartar" />
+      <TextField fx:id="btnPropietario" layoutX="223.0" layoutY="109.0" onAction="#clickBtnPropietario" prefHeight="25.0" prefWidth="394.0" />
+      <TextField fx:id="btnApartamento" layoutX="223.0" layoutY="163.0" onAction="#clickBtnApartamento" prefHeight="25.0" prefWidth="394.0" />
+      <TextField fx:id="btnTiempo" layoutX="223.0" layoutY="224.0" onAction="#clickBtnTiempo" prefHeight="25.0" prefWidth="394.0" />
+   </children>
+</AnchorPane>

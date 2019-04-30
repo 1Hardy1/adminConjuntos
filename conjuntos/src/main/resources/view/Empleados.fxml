@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="117.0" fitWidth="104.0" layoutX="282.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
@@ -20,18 +19,24 @@
             <Font name="Eras Demi ITC" size="18.0" />
          </font>
       </Text>
-      <ImageView fitHeight="134.0" fitWidth="124.0" layoutX="123.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="134.0" fitWidth="124.0" layoutX="272.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Vigilante-municipal-Ayuntamiento-Carcabuey.jpg.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="88.0" fitWidth="149.0" layoutX="383.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="BtnVigilantes" layoutX="148.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickBtnVigilantes" prefHeight="41.0" prefWidth="73.0" text="Vigilantes" />
-      <ImageView fitHeight="114.0" fitWidth="104.0" layoutX="399.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="btnVigilantes" layoutX="298.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickBtnVigilantes" prefHeight="41.0" prefWidth="73.0" text="Vigilantes" />
+      <ImageView fitHeight="114.0" fitWidth="104.0" layoutX="468.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@servicio-domestico-madrid-11.png" />
          </image>
       </ImageView>
-      <Button fx:id="BtnAseadores" layoutX="415.0" layoutY="344.0" mnemonicParsing="false" onAction="#clickBtnAseadores" prefHeight="41.0" prefWidth="73.0" text="Aseadores" />
+      <Button fx:id="btnAseadores" layoutX="484.0" layoutY="350.0" mnemonicParsing="false" onAction="#clickBtnAseadores" prefHeight="41.0" prefWidth="73.0" text="Aseadores" />
+      <ImageView fitHeight="145.0" fitWidth="191.0" layoutX="85.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@4069a4af92f0f2292a9e92e2cb553b77.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMantenimiento" layoutX="105.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickBtnMantenimiento" prefHeight="41.0" prefWidth="104.0" text="Mantenimiento" />
    </children>
 </AnchorPane>
